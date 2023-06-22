@@ -63,10 +63,14 @@ if predict_button:
         result = response.read()
         parsed_result = json.loads(result)
         price_per_kg = parsed_result["Results"]["WebServiceOutput0"][0]["Price per kg"]
-        with st.expander("See JSON Response"):
-            st.write(parsed_result)
         st.write("Prediction Result:")
-        st.write(f"Price per kg: {price_per_kg}")
+        st.markdown(
+            f"""
+            Price per kg:
+            - Indian Rupee (₹): **{round(float(price_per_kg), 3)}**
+            - US Dollar ($): **{round(float(price_per_kg) * 0.0122, 3)}**
+            - Euro (€): **{round(float(price_per_kg) * 0.0111, 3)}**
+            """)
     except urllib.error.HTTPError as error:
         st.error("The request failed with status code: " + str(error.code))
         st.write(error.info())

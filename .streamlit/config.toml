@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#007f5f"  # Green color for plant diseases detection
+backgroundColor = "#f6f6f6"  # Light gray background
+secondaryBackgroundColor = "#e6e6e6"  # Darker gray secondary background
+textColor = "#333333"  # Dark gray text color
+font = "sans serif"  # Font style

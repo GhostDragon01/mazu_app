@@ -35,7 +35,7 @@ To get started with the PlantAI project, follow these steps:
 
 1. Clone the repository:
 
-`bash
+`{bash}
 git clone https://github.com/GhostDragon01/mazu_app.git
 `
 

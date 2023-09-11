@@ -35,22 +35,22 @@ To get started with the PlantAI project, follow these steps:
 
 1. Clone the repository:
 
-`{bash}
+```
 git clone https://github.com/GhostDragon01/mazu_app.git
-`
+```
 
 2. Install the required dependencies:
 
-`bash
+```
 pip install -r requirements.txt
-`
+```
 
 
 3. Run the Streamlit application:
 
-`bash
+```
 streamlit run Home.py
-`
+```
 
 
 4. Access the application in your web browser at `http://localhost:8501`.
